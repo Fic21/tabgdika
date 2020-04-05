@@ -33,6 +33,9 @@
                     <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
                     <ul class="collapse list-unstyled" id="homeSubmenu">
                         <li>
+                            <a href="index.php?page=Home">Home</a>
+                        </li>
+                        <li>
                             <a href="index.php?page=Setting">Setting</a>
                         </li>
                         <li>
@@ -44,7 +47,7 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="#">About</a>
+                    <a href="index.php?page=About">About</a>
                 </li>
                 <li>
                     <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Sistem</a>
@@ -61,7 +64,7 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="index.php?page=Portfolio">Portfolio</a>
+                    <a href="index.php?page=Portfolio">Portofolio</a>
                 </li>
                 <li>
                     <a href="index.php?page=ContactS">ContactS</a>
@@ -78,7 +81,45 @@
             </nav>
             <div class="isi">
                 <?php
-                    
+                    if (isset($_GET['page'])){
+                        $page=$_GET['page'];
+                    switch ($page) {
+                        case 'Home':
+                            include "halaman/Home.php";
+                            break;
+                        case 'Setting':
+                            include "halaman/tentang.php";
+                            break;
+                        case 'Statistik':
+                            include "halaman/Statistik.php";
+                            break;
+                        case 'Logout':
+                            include "halaman/Logout.php";
+                            break;
+                        case 'About':
+                            include "halaman/About.php";
+                            break;
+                        case 'Monitoring':
+                            include "halaman/Monitoring.php";
+                            break;
+                        case 'Remote';
+                            include "halaman/Remote.php";
+                            break;
+                        case 'Power';
+                            include "halaman/Power.php";
+                            break;
+                        case 'Portofolio';
+                            include "halaman/Portofolio.php";
+                            break;
+                        case 'ContactS':
+                            include "halaman/ContactS.php";
+                            break;
+                        
+                        default:
+                            echo "<center><h3>Maaf. Halaman tidak di temukan !</h3></center>";
+                            break;                       
+                        }
+                    }
                 ?>
             </div>
     </div>

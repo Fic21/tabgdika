@@ -129,3 +129,23 @@ ul ul a{
     }
 }
 
+/*for Home*/
+.halaman .Home{
+    padding: 50px;
+}
+.halaman .Home h1{
+    text-align: center;
+    color: #292724;
+}
+
+
+/*for about*/
+.halaman .About{
+   padding: 50px;
+}
+
+
+
+
+
+
