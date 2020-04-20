@@ -67,12 +67,12 @@
                     <a href="index.php?page=Portfolio">Portofolio</a>
                 </li>
                 <li>
-                    <a href="index.php?page=ContactS">ContactS</a>
+                    <a href="index.php?page=Contacts">ContactS</a>
                 </li>
             </ul> 
         </nav>
         <div id="content">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
                     <button type="button" id="sidebarCollapse" class="btn btn-info">
                         <i class="fas fa-align-left"></i>
@@ -108,11 +108,11 @@
                         case 'Power';
                             include "halaman/Power.php";
                             break;
-                        case 'Portofolio';
-                            include "halaman/Portofolio.php";
+                        case 'Portfolio';
+                            include "halaman/Portfolio.php";
                             break;
-                        case 'ContactS':
-                            include "halaman/ContactS.php";
+                        case 'Contacts':
+                            include "halaman/Contacts.php";
                             break;
                         
                         default:

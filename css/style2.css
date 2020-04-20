@@ -2,6 +2,12 @@
 
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 
+body{
+    background-color: rgba(109, 127, 204,0.5);
+}
+p{
+    color:#fcfcfc;
+}
 .wrapper{
     display: flex;
     /*width: 100%;*/
@@ -23,6 +29,8 @@
     color: #fff;
     transition: all 0.3s;
     box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
     
 }
 
@@ -80,6 +88,12 @@ a[data-toggle="collapse"]{
     text-decoration: none;
 }
 
+.navbar{
+    background-color: rgba(0, 0, 0,0.8);
+    border-radius: 5px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
 
 
 
@@ -134,26 +148,59 @@ ul ul a{
 /*Dibawah ini untuk halaman*/
 /*for Home*/
 .halaman{
-    padding: 50px;
+    background-color: rgba(0, 0, 0,0.8);
+    width: 100%;
+    height: 657px;
+    padding: 20px;
+    border-radius: 5px;
+   
 }
 .Home h1{
     text-align: center;
-    color: #292724;
+    color: #fcfcfc;
 }
 
 
 /*for about*/
 .About{
-   padding: 50px;
+    color: #fcfcfc;
+    padding: 50px;
 }
 
 /*for Remote*/
 .indikatorStatus{
+    padding: 30px;
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 5px;
+}
+.dot {
    height: 15px;
    width:15px; 
    background-color:red;
    border-radius: 15px;
-   border-color:blue;
+   float:left;
+   margin: 9px 9px;
+}
+.indikatorStatus h3{
+    color: #fff;
+    
+}
+.indikatorContent{
+    margin-top: 30px;
+    padding: 30px;
+    background-color: rgba(0,0,0,0.1);
+    border-radius:5px;
+}
+.indikatorContent h4{
+    border-bottom: 3px solid #827b7a;
+    padding-bottom: 10px;
+    text-align: center;
+    color:#fcfcfc;
+    font-size: 30px;
+}
+.indikatorContent p{
+    padding: 5px;
+    font-size:20px;
 }
 
 
